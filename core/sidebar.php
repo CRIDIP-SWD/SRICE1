@@ -18,7 +18,7 @@
                         <img src="<?= ROOT,ASSETS,IMG; ?>placeholders/avatars/avatar2.jpg" alt="avatar">
                     </a>
                 </div>
-                <div class="sidebar-user-name">John Doe</div>
+                <div class="sidebar-user-name"><?= $info['login']; ?></div>
                 <div class="sidebar-user-links">
 
                 </div>
