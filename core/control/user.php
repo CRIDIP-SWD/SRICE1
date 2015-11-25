@@ -37,4 +37,5 @@ if(isset($_GET['action']) && $_GET['action'] == 'logout')
     session_start();
     session_destroy();
     header("Location: ../../index.php?view=login");
+    exit();
 }
