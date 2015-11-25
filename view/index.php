@@ -92,7 +92,7 @@
                                 </a>
                                 <a href="page_comp_charts.html" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                        <div class="widget-icon pull-left themed-background-danger animation-fadeIn">
                                             <i class="gi gi-usd"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
