@@ -8,6 +8,7 @@ if(!isset($_SESSION['login']))
     $login = $_SESSION['login'];
 }
 include "classe.php";
+$info = $user_cls->info_user($login);
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->

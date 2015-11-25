@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: CRIDIP-SWD
- * Date: 25/11/2015
- * Time: 12:03
- */
+require "classe/autoloader.php";
+autoloader::register();
+
+$user_cls = new user();
+
+
