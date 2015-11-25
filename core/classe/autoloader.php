@@ -15,6 +15,6 @@ class autoloader
 
     static function autoload($class)
     {
-        require dirname(__DIR__).'/class/'.$class.'.php';
+        require dirname(__DIR__).'/classe/'.$class.'.php';
     }
 }
