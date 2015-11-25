@@ -39,20 +39,39 @@
                     <a href="index.php?view=asc"><i class="gi gi-dashboard sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Accueil</span></a>
                 </li>
                 <li>
-                    <a href="index.php?view=asc&sub=salaries"><i class="gi gi-usd sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Salariés</span></a>
+                    <a href="index.php?view=asc&sub=salaries"><i class="gi gi-user sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Salariés</span></a>
                 </li>
                 <li>
-                    <a href="page_widgets_media.html"><i class="gi gi-film sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Media</span></a>
+                    <a href="#" class="sidebar-nav-menu">
+                        <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                        <i class="gi gi-shop sidebar-nav-icon"></i>
+                        <span class="sidebar-nav-mini-hide">Prestations</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.php?view=asc&sub=prestation">Liste des Prestations</a>
+                        </li>
+                        <li>
+                            <a href="index.php?view=asc&sub=achat">Mes Achats</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="page_widgets_links.html"><i class="gi gi-link sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Links</span></a>
+                    <a href="index.php?view=asc&sub=billetterie"><i class="gi gi-tag sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Ma billetteries</span></a>
+                </li>
+                <li>
+                    <a href="index.php?view=asc&sub=remboursement"><i class="gi gi-coat_hanger sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Mes Remboursements</span></a>
                 </li>
                 <li class="sidebar-header">
                     <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
                     <span class="sidebar-header-title">Design Kit</span>
                 </li>
                 <li>
-                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-certificate sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">User Interface</span></a>
+                    <a href="#" class="sidebar-nav-menu">
+                        <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                        <i class="gi gi-certificate sidebar-nav-icon"></i>
+                        <span class="sidebar-nav-mini-hide">User Interface</span>
+                    </a>
                     <ul>
                         <li>
                             <a href="page_ui_grid_blocks.html">Grid &amp; Blocks</a>
