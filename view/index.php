@@ -396,23 +396,23 @@
         <!-- END User Settings -->
 
         <!-- Remember to include excanvas for IE8 chart support -->
-        <!--[if IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+        <!--[if IE 8]><script src="<?= ROOT,ASSETS,JS; ?>helpers/excanvas.min.js"></script><![endif]-->
 
         <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
 
         <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/app.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>vendor/bootstrap.min.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>plugins.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>app.js"></script>
 
         <!-- Google Maps API + Gmaps Plugin, must be loaded in the page you would like to use maps (Remove 'http:' if you have SSL) -->
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/helpers/gmaps.min.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>helpers/gmaps.min.js"></script>
 
         <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/index2.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>pages/index2.js"></script>
         <script>$(function(){ Index2.init(); });</script>
     </body>
 </html>

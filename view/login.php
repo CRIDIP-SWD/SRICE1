@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group form-actions pull-right">
+                        <div class="form-group form-actions">
                             <div class="col-xs-8 text-right">
                                 <button type="submit" class="btn btn-sm btn-primary" name="action" value="connexion"><i class="fa fa-angle-right"></i> Connexion à SRICE</button>
                             </div>
