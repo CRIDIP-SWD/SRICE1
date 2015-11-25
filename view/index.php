@@ -77,14 +77,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h1>GESTION DES ASC</h1>
-                                <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
                                         <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-usd"></i>
+                                            <i class="gi gi-user"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            + <strong>250%</strong><br>
-                                            <small>Sales Today</small>
+                                            <strong>3</strong><br>
+                                            <small>Salariés</small><br>
+                                            <strong>3</strong><br>
+                                            <small>Ayants Droit</small>
                                         </h3>
                                     </div>
                                 </a>
