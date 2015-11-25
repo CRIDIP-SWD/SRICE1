@@ -20,11 +20,7 @@
                 </div>
                 <div class="sidebar-user-name">John Doe</div>
                 <div class="sidebar-user-links">
-                    <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
-                    <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
-                    <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.html in PHP version) -->
-                    <a href="#modal-user-settings" data-toggle="modal" class="enable-tooltip" data-placement="bottom" title="Settings"><i class="gi gi-cogwheel"></i></a>
-                    <a href="login.html" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
+
                 </div>
             </div>
             <!-- END User Info -->
@@ -34,43 +30,16 @@
             <!-- Sidebar Navigation -->
             <ul class="sidebar-nav">
                 <li>
-                    <a href="index.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Dashboard</span></a>
-                </li>
-                <li>
-                    <a href="index2.html" class=" active"><i class="gi gi-leaf sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Dashboard 2</span></a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shopping_cart sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">eCommerce</span></a>
-                    <ul>
-                        <li>
-                            <a href="page_ecom_dashboard.html">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="page_ecom_orders.html">Orders</a>
-                        </li>
-                        <li>
-                            <a href="page_ecom_order_view.html">Order View</a>
-                        </li>
-                        <li>
-                            <a href="page_ecom_products.html">Products</a>
-                        </li>
-                        <li>
-                            <a href="page_ecom_product_edit.html">Product Edit</a>
-                        </li>
-                        <li>
-                            <a href="page_ecom_customer_view.html">Customer View</a>
-                        </li>
-                    </ul>
+                    <a href="index.php?view=index"><i class="gi gi-stopwatch sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Accueil</span></a>
                 </li>
                 <li class="sidebar-header">
-                    <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a><a href="javascript:void(0)" data-toggle="tooltip" title="Create the most amazing pages with the widget kit!"><i class="gi gi-lightbulb"></i></a></span>
-                    <span class="sidebar-header-title">Widget Kit</span>
+                    <span class="sidebar-header-title">Gestion des ASC</span>
                 </li>
                 <li>
-                    <a href="page_widgets_stats.html"><i class="gi gi-charts sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Statistics</span></a>
+                    <a href="index.php?view=asc"><i class="gi gi-dashboard sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Accueil</span></a>
                 </li>
                 <li>
-                    <a href="page_widgets_social.html"><i class="gi gi-share_alt sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Social</span></a>
+                    <a href="index.php?view=asc&sub=salaries"><i class="gi gi-usd sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Salariés</span></a>
                 </li>
                 <li>
                     <a href="page_widgets_media.html"><i class="gi gi-film sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Media</span></a>
