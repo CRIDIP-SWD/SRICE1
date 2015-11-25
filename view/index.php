@@ -74,7 +74,11 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1>GESTION DES ASC</h1>
+                            </div>
+                        </div>
                     </div>
                     <!-- END Page Content -->
 
