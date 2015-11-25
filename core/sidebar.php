@@ -62,6 +62,63 @@
                 <li>
                     <a href="index.php?view=asc&sub=remboursement"><i class="gi gi-euro sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Mes Remboursements</span></a>
                 </li>
+                <li>
+                    <a href="#" class="sidebar-nav-menu">
+                        <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                        <i class="gi gi-transfer sidebar-nav-icon"></i>
+                        <span class="sidebar-nav-mini-hide">Gestion</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.php?view=asc&sub=fixes">Produits & Charges Fixes</a>
+                        </li>
+                        <li>
+                            <a href="index.php?view=asc&sub=remise">Remise en banque</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-nav-menu">
+                                <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                                <i class="gi gi-file sidebar-nav-icon"></i>
+                                <span class="sidebar-nav-mini-hide">Etats</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="index.php?view=asc&sub=caisse">Solde de Caisse</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?view=asc&sub=resultat">Compte de Résultat</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?view=asc&sub=bilan">Bilan</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?view=asc&sub=stock">Etat des Stocks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-nav-menu">
+                                        <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+                                        <i class="gi gi-file sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">Journal des ventes</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?view=asc&sub=j_general">Général</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?view=asc&sub=j_salarie">Par salarié</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?view=asc&sub=j_ad">Ayant Droit</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?view=asc&sub=j_presta">Prestation</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li class="sidebar-header">
                     <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
                     <span class="sidebar-header-title">Design Kit</span>

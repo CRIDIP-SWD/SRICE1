@@ -30,7 +30,7 @@
                 <img src="<?= ROOT,ASSETS,IMG; ?>placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
-                <li class="dropdown-header text-center">Compte</li>
+                <li class="dropdown-header text-center">Mon Compte</li>
                 <li>
                     <a href="<?= ROOT,CORE,CONTROL; ?>user.php?action=logout&iduser="><i class="fa fa-ban fa-fw pull-right"></i> Déconnexion</a>
                 </li>
