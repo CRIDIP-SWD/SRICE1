@@ -104,16 +104,14 @@
                             </div>
                             <div class="col-md-6">
                                 <h1 style="text-align: right;">Budget de Fonctionnement</h1>
-                                <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
+                                <a href="index.php?view=fct&sub=banque" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
                                         <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-user"></i>
+                                            <i class="gi gi-euro"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>3</strong><br>
-                                            <small>Salariés</small><br>
-                                            <strong>3</strong><br>
-                                            <small>Ayants Droits</small>
+                                            <strong>12 000,00</strong> €<br>
+                                            <small>En banque</small><br>
                                         </h3>
                                     </div>
                                 </a>
