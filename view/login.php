@@ -134,5 +134,22 @@
 <!-- Load and execute javascript code used only in this page -->
 <script src="<?= ROOT,ASSETS,JS; ?>pages/login.js"></script>
 <script>$(function(){ Login.init(); });</script>
+
+<?php if(isset($_GET['error']) && $_GET['error'] == 'base') { ?>
+    <script type="text/javascript">
+        toastr.error("Erreur dans la base de donnée", "ERREUR");
+    </script>
+<?php } ?>
+
+<?php if(isset($_GET['warning']) && $_GET['warning'] == 'no-compte') { ?>
+<script type="text/javascript">
+    toastr.warning("Mauvaise Adresse Mail ou Mot de Passe", "ATTENTION");
+</script>
+<?php } ?>
+<?php if(isset($_GET['warning']) && $_GET['warning'] == 'champs') { ?>
+    <script type="text/javascript">
+        toastr.warning("Un ou des champs requis ne sont pas remplie", "ATTENTION");
+    </script>
+<?php } ?>
 </body>
 </html>

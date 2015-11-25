@@ -1,5 +1,12 @@
 <?php
+session_start();
 include "config.php";
+if(!isset($_SESSION['login']))
+{
+    header("Location: index.php?view=login");
+}else{
+    $login = $_SESSION['login'];
+}
 include "classe.php";
 ?>
 <!DOCTYPE html>
