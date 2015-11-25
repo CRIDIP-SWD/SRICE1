@@ -102,6 +102,33 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-md-6">
+                                <h1 class="pull-right">Budget de Fonctionnement</h1>
+                                <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
+                                    <div class="widget-simple">
+                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                            <i class="gi gi-user"></i>
+                                        </div>
+                                        <h3 class="widget-content text-right animation-pullDown">
+                                            <strong>3</strong><br>
+                                            <small>Salariés</small><br>
+                                            <strong>3</strong><br>
+                                            <small>Ayants Droits</small>
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                    <div class="widget-simple">
+                                        <div class="widget-icon pull-left themed-background-danger animation-fadeIn">
+                                            <i class="gi gi-usd"></i>
+                                        </div>
+                                        <h3 class="widget-content text-right animation-pullDown">
+                                            <strong>300</strong> €<br>
+                                            <small>A remettre en Banque</small>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- END Page Content -->
