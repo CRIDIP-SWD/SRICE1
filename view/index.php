@@ -83,9 +83,9 @@
                                             <i class="gi gi-user"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>3</strong><br>
+                                            <strong><?= $salarie_cls->count_salarie(); ?></strong><br>
                                             <small>Salariés</small><br>
-                                            <strong>3</strong><br>
+                                            <strong><?= $salarie_cls->count_ad(); ?></strong><br>
                                             <small>Ayants Droits</small>
                                         </h3>
                                     </div>
