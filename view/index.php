@@ -107,7 +107,7 @@
                                 <a href="index.php?view=fct&sub=banque" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
                                         <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-euro"></i>
+                                            <i class="gi gi-bank"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
                                             <strong>12 000,00</strong> €<br>
@@ -115,14 +115,36 @@
                                         </h3>
                                     </div>
                                 </a>
-                                <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                <a href="index.php?view=fct&sub=caisse" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-danger animation-fadeIn">
-                                            <i class="gi gi-usd"></i>
+                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                            <i class="gi gi-euro"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>300</strong> €<br>
-                                            <small>A remettre en Banque</small>
+                                            <strong>0,00</strong> €<br>
+                                            <small>En caisse</small><br>
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="index.php?view=fct&sub=livret" class="widget widget-hover-effect1">
+                                    <div class="widget-simple">
+                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                            <i class="gi gi-book_open"></i>
+                                        </div>
+                                        <h3 class="widget-content text-right animation-pullDown">
+                                            <strong>1 000,00</strong> €<br>
+                                            <small>Dans le Livret</small><br>
+                                        </h3>
+                                    </div>
+                                </a>
+                                <a href="index.php?view=fct&sub=pret" class="widget widget-hover-effect1">
+                                    <div class="widget-simple">
+                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                            <i class="fa fa-exchange"></i>
+                                        </div>
+                                        <h3 class="widget-content text-right animation-pullDown">
+                                            <strong>0,00</strong> €<br>
+                                            <small>En pret</small><br>
                                         </h3>
                                     </div>
                                 </a>
