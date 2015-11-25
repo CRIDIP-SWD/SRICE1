@@ -7,6 +7,10 @@ if(isset($_GET['view']))
             include "view/index.php";
             break;
 
+        case 'login':
+            include "view/login.php";
+            break;
+
         default:
             include "view/erreur.php";
             break;
