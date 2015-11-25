@@ -97,7 +97,6 @@
                                 <li>
                                     <a href="#" class="sidebar-nav-submenu">
                                         <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
-                                        <i class="gi gi-file sidebar-nav-icon"></i>
                                         <span class="sidebar-nav-mini-hide">Journal des ventes</span>
                                     </a>
                                     <ul>
@@ -120,8 +119,7 @@
                     </ul>
                 </li>
                 <li class="sidebar-header">
-                    <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
-                    <span class="sidebar-header-title">Design Kit</span>
+                    <span class="sidebar-header-title">Budget de Fonctionnement</span>
                 </li>
                 <li>
                     <a href="#" class="sidebar-nav-menu">
