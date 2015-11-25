@@ -114,6 +114,7 @@
                                     </table>
                                     <br>
                                     <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
+                                    <br>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -162,6 +163,25 @@
                                         </h3>
                                     </div>
                                 </a>
+                                <div class="block">
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td style="width: 50%;">Etat du Bilan Final</td>
+                                            <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50%;">Etat de la Balance</td>
+                                            <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 50%;">Etat des équivalences d'écriture</td>
+                                            <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> <strong>1 Erreur</strong></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                     </div>
