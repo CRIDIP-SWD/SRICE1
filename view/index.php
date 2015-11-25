@@ -86,7 +86,7 @@
                                             <strong>3</strong><br>
                                             <small>Salariés</small><br>
                                             <strong>3</strong><br>
-                                            <small>Ayants Droit</small>
+                                            <small>Ayants Droits</small>
                                         </h3>
                                     </div>
                                 </a>
@@ -96,8 +96,8 @@
                                             <i class="gi gi-usd"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            + <strong>250%</strong><br>
-                                            <small>Sales Today</small>
+                                            <strong>300</strong> €<br>
+                                            <small>A remettre en Banque</small>
                                         </h3>
                                     </div>
                                 </a>
