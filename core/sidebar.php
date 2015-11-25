@@ -76,7 +76,7 @@
                             <a href="index.php?view=asc&sub=remise">Remise en banque</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu">
+                            <a href="#" class="sidebar-nav-submenu">
                                 <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
                                 <i class="gi gi-file sidebar-nav-icon"></i>
                                 <span class="sidebar-nav-mini-hide">Etats</span>
@@ -95,7 +95,7 @@
                                     <a href="index.php?view=asc&sub=stock">Etat des Stocks</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="sidebar-nav-menu">
+                                    <a href="#" class="sidebar-nav-submenu">
                                         <i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
                                         <i class="gi gi-file sidebar-nav-icon"></i>
                                         <span class="sidebar-nav-mini-hide">Journal des ventes</span>
