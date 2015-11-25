@@ -60,7 +60,7 @@
                     <a href="index.php?view=asc&sub=billetterie"><i class="gi gi-tag sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Ma billetteries</span></a>
                 </li>
                 <li>
-                    <a href="index.php?view=asc&sub=remboursement"><i class="gi gi-coat_hanger sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Mes Remboursements</span></a>
+                    <a href="index.php?view=asc&sub=remboursement"><i class="gi gi-euro sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Mes Remboursements</span></a>
                 </li>
                 <li class="sidebar-header">
                     <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
