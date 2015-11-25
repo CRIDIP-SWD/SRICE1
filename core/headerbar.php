@@ -32,7 +32,7 @@
             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                 <li class="dropdown-header text-center">Mon Compte</li>
                 <li>
-                    <a href="<?= ROOT,CORE,CONTROL; ?>user.php?action=logout&iduser="><i class="fa fa-ban fa-fw pull-right"></i> Déconnexion</a>
+                    <a href="<?= ROOT,CORE,CONTROL; ?>user.php?action=logout&iduser=<?= $info['iduser']; ?>"><i class="fa fa-ban fa-fw pull-right"></i> Déconnexion</a>
                 </li>
             </ul>
         </li>

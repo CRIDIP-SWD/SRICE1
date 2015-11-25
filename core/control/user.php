@@ -29,3 +29,12 @@ if(isset($_POST['action']) && $_POST['action'] == 'connexion')
         header("Location: ../../index.php?view=login&warning=champs");
     }
 }
+if(isset($_GET['action']) && $_GET['action'] == 'logout')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    session_start();
+    session_destroy();
+    header("Location: ../../index.php?view=login");
+}
