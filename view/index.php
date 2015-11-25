@@ -113,7 +113,7 @@
                                         </tr>
                                     </table>
                                     <br>
-                                    <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48</i>
+                                    <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
                                 </div>
                             </div>
                             <div class="col-md-6">
