@@ -109,7 +109,7 @@
                                         </tr>
                                         <tr>
                                             <td style="width: 50%;">Rapprochement du Solde de caisse & des remise</td>
-                                            <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> 1 Erreur</td>
+                                            <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> <strong>1 Erreur</strong></td>
                                         </tr>
                                     </table>
                                     <br>
