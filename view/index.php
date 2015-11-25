@@ -103,7 +103,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <h1 class="pull-right">Budget de Fonctionnement</h1>
+                                <h1 style="text-align: right;">Budget de Fonctionnement</h1>
                                 <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
                                     <div class="widget-simple">
                                         <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
