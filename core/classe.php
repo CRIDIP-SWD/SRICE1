@@ -1,5 +1,5 @@
 <?php
-require "classe/autoloader.php";
+require dirname(__DIR__)."/core/classe/autoloader.php";
 autoloader::register();
 
 $user_cls = new user();
