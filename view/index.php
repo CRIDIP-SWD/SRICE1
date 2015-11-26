@@ -147,7 +147,7 @@
                                             <i class="gi gi-book_open"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>1 000,00</strong> €<br>
+                                            <strong><?= number_format($livret_cls->sum_livret(), 2, ',',' '); ?></strong> €<br>
                                             <small>Dans le Livret</small><br>
                                         </h3>
                                     </div>
@@ -158,7 +158,7 @@
                                             <i class="fa fa-exchange"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>0,00</strong> €<br>
+                                            <strong><?= number_format($pret_cls->sum_pret(), 2, ',',' '); ?></strong> €<br>
                                             <small>En pret</small><br>
                                         </h3>
                                     </div>

@@ -9,5 +9,7 @@ $asc_bilan = new asc_bilan();
 $asc_resultat = new asc_resultat();
 $banque_cls = new fct_banque();
 $caisse_cls = new fct_caisse();
+$livret_cls = new fct_livret();
+$pret_cls = new fct_pret();
 
 
