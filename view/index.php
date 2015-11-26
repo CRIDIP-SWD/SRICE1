@@ -111,10 +111,6 @@
                                                 ?>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="width: 50%;">Rapprochement du Solde de caisse & des remise</td>
-                                            <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> <strong>1 Erreur</strong></td>
-                                        </tr>
                                     </table>
                                     <br>
                                     <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
