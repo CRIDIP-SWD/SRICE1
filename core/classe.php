@@ -4,5 +4,6 @@ autoloader::register();
 
 $user_cls = new user();
 $salarie_cls = new salarie();
+$remise_cls = new remise();
 
 

@@ -96,7 +96,7 @@
                                             <i class="gi gi-usd"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>300</strong> €<br>
+                                            <strong><?= number_format($remise_cls->compar(), 2, ',', ' '); ?></strong> €<br>
                                             <small>A remettre en Banque</small>
                                         </h3>
                                     </div>
