@@ -107,7 +107,7 @@
                                             <td style="width: 50%;">Rapprochement du compte de résultat & du bilan</td>
                                             <td style="width: 50%; text-align: right">
                                                 <?php
-                                                if($asc_bilan->sum_bilan() != $asc_resultat->sum_resultat()){echo "<i class='fa fa-times-circle text-danger'></i> Erreur";}else{echo "<i class='fa fa-check-circle text-success'></i> OK"}
+                                                if($asc_bilan->sum_bilan() != $asc_resultat->sum_resultat()){echo "<i class='fa fa-times-circle text-danger'></i> Erreur";}else{echo "<i class='fa fa-check-circle text-success'></i> OK";}
                                                 ?>
                                             </td>
                                         </tr>
