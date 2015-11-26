@@ -136,7 +136,7 @@
                                             <i class="gi gi-euro"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>0,00</strong> €<br>
+                                            <strong><?= number_format($caisse_cls->sum_caisse(), 2, ',',' '); ?></strong> €<br>
                                             <small>En caisse</small><br>
                                         </h3>
                                     </div>
