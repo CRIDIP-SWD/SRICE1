@@ -15,7 +15,7 @@ class fct_banque
         $sql2 = mysql_query("SELECT SUM(credit) FROM compta_compte WHERE idcomptaplan = '3'")or die(mysql_error());
         $data2 = mysql_result($sql2, 0);
 
-        $calc = $data2 - $data1;
+        $calc = $data1 - $data2;
         return $calc;
     }
 }
