@@ -125,7 +125,7 @@
                                             <i class="gi gi-bank"></i>
                                         </div>
                                         <h3 class="widget-content text-right animation-pullDown">
-                                            <strong>12 000,00</strong> €<br>
+                                            <strong><?= number_format($banque_cls->sum_banque(), 2, ',',' '); ?></strong> €<br>
                                             <small>En banque</small><br>
                                         </h3>
                                     </div>
