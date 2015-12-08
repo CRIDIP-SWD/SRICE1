@@ -330,7 +330,7 @@
                                                                     </thead>
                                                                     <tbody>
                                                                     <?php
-                                                                    $sql_sauvegarde = mysql_query("SELECT * FROM sauvegarde ORDER BY date_sauvegarde ASC LIMIT 5")or die(mysql_error()):
+                                                                    $sql_sauvegarde = mysql_query("SELECT * FROM sauvegarde ORDER BY date_sauvegarde ASC LIMIT 5")or die(mysql_error());
                                                                     while($save = mysql_fetch_array($sql_sauvegarde))
                                                                     {
                                                                     ?>
