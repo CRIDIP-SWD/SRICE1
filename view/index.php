@@ -231,7 +231,30 @@
                                                 <h3 class="modal-title"><i class="fa fa-database"></i> Base de données</h3>
                                             </div>
                                             <div class="modal-body">
-                                                Modal Content..
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="block">
+                                                            <div class="block-title">
+                                                                <h2>Base de donnée de votre comité</h2>
+                                                            </div>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Table</th>
+                                                                            <th>Nb Entrées</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
