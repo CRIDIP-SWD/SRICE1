@@ -258,6 +258,30 @@
                                                                             <td style="width: 90%;">Ventes Ayants Droits</td>
                                                                             <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_billet_ad(); ?></td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Charges Fixes</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_charge_fixe(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Famille de Prestation</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_famille_presta(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Prestation</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_prestation(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Produit Fixe</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_produit_fixe(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Réglement de Vente Salarié</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_reg_bs(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Réglement de Vente Ayant Droit</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_reg_ad(); ?></td>
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
