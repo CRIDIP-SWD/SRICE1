@@ -282,6 +282,30 @@
                                                                             <td style="width: 90%;">Réglement de Vente Ayant Droit</td>
                                                                             <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_reg_ad(); ?></td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Réglement de Remboursement salarié</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_reg_remb_s(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Réglement de Remboursement Ayants Droits</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_reg_remb_ad(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Remboursement salarié</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_remb_s(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Remboursement Ayant Droit</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_remb_ad(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Remise en banque</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_remise(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Salariés</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_salarie(); ?></td>
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
