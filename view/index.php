@@ -206,23 +206,24 @@
                                     <?php if(!empty($nom_secteur)){echo "<li>".$nom_secteur."</li>";} ?>
                                     <?php if(!empty($nom_page)){echo "<li>".$nom_page."</li>";} ?>
                                 </ul>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="block">
-                                        <div class="block-title">
-                                            <h2>Paramétrage du Logiciel</h2>
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-database"></i> Base de données</button>
-                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-users"></i> Utilisateurs</button>
-                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-building"></i> Etablissement</button>
-                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-cogs"></i> Configuration du Programme</button>
-                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-download"></i> Note de Mise à jour</button>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="block">
+                                            <div class="block-title">
+                                                <h2>Paramétrage du Logiciel</h2>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-database"></i> Base de données</button>
+                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-users"></i> Utilisateurs</button>
+                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-building"></i> Etablissement</button>
+                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-cogs"></i> Configuration du Programme</button>
+                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-download"></i> Note de Mise à jour</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         <?php } ?>
                     <?php } ?>
                     <!-- END Page Content -->
