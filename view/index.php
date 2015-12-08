@@ -228,7 +228,7 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                <h3 class="modal-title">Base de données</h3>
+                                                <h3 class="modal-title"><i class="fa fa-database"></i> Base de données</h3>
                                             </div>
                                             <div class="modal-body">
                                                 Modal Content..
