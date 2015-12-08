@@ -250,6 +250,14 @@
                                                                             <td style="width: 90%;">Achat</td>
                                                                             <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_achat(); ?></td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Ventes Salariés</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_billet_salarie(); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 90%;">Ventes Ayants Droits</td>
+                                                                            <td style="font-style: italic; text-align: center; width: 10%;"><?= $params_cls->count_billet_ad(); ?></td>
+                                                                        </tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
