@@ -187,6 +187,26 @@
                             </div>
                         </div>
                     <?php } ?>
+                    <?php if(isset($_GET['sub']) && $_GET['sub'] == 'paramtrage'){ ?>
+                        <?php
+                        $nom_secteur = "Paramétrage";
+                        $nom_page = "Accueil";
+                        ?>
+                        <div id="page-content">
+                            <div class="content-header">
+                                <div class="header-section">
+                                    <h1>
+                                        <i class="gi gi-brush"></i><?= $nom_page; ?><br><small><?= $nom_secteur; ?></small>
+                                    </h1>
+                                </div>
+                            </div>
+                            <ul class="breadcrumb breadcrumb-top">
+                                <li><?= NOM_LOGICIEL; ?></li>
+                                <?php if(!empty($nom_secteur)){echo "<li>".$nom_secteur."</li>";} ?>
+                                <?php if(!empty($nom_page)){echo "<li>".$nom_page."</li>";} ?>
+                            </ul>
+                        </div>
+                    <?php } ?>
                     <!-- END Page Content -->
 
                     <!-- Footer -->
