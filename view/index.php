@@ -330,16 +330,19 @@
                                                                     </thead>
                                                                     <tbody>
                                                                     <?php
-                                                                    $sql_sauvegarde = mysql_query("SELECT * FROM sauvegarde ORDER BY date_sauvegarde ASC LIMIT 5")or die(mysql_error())
+                                                                    $sql_sauvegarde = mysql_query("SELECT * FROM sauvegarde ORDER BY date_sauvegarde ASC LIMIT 5")or die(mysql_error()):
+                                                                    while($save = mysql_fetch_array($sql_sauvegarde))
+                                                                    {
                                                                     ?>
                                                                         <tr>
-                                                                            <td>08/12/2015</td>
-                                                                            <td>12,8 Mo</td>
+                                                                            <td><?= date("d/m/Y", $save['date_sauvegarde']); ?></td>
+                                                                            <td><?= round($save['taille_sauvegarde'], 2); ?></td>
                                                                             <td>
-                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary"><i class="fa fa-refresh fa-spin"></i></button>
-                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Supprimer" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i></button>
+                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=rest-save-bdd&idsaauvegarde=<?= $save['id']; ?>'"><i class="fa fa-refresh fa-spin"></i></button>
+                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Supprimer" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=del-save-bdd&idsaauvegarde=<?= $save['id']; ?>'"><i class="fa fa-remove"></i></button>
                                                                             </td>
                                                                         </tr>
+                                                                    <?php } ?>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
