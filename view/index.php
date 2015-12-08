@@ -247,7 +247,8 @@
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
-
+                                                                            <td>Achat</td>
+                                                                            <td style="font-style: italic;"><?= $params_cls->count_achat(); ?></td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>

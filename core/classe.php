@@ -12,4 +12,6 @@ $caisse_cls = new fct_caisse();
 $livret_cls = new fct_livret();
 $pret_cls = new fct_pret();
 
+$params_cls = new parametrage();
+
 
