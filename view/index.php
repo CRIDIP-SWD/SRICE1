@@ -213,11 +213,11 @@
                                                 <h2>Paramétrage du Logiciel</h2>
                                             </div>
                                             <div class="text-center">
-                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-database"></i> Base de données</button>
-                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-users"></i> Utilisateurs</button>
-                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-building"></i> Etablissement</button>
-                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-cogs"></i> Configuration du Programme</button>
-                                                <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-download"></i> Note de Mise à jour</button>
+                                                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#database"><i class="fa fa-database"></i> Base de données</button>
+                                                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#users"><i class="fa fa-users"></i> Utilisateurs</button>
+                                                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#etablissement"><i class="fa fa-building"></i> Etablissement</button>
+                                                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#configuration"><i class="fa fa-cogs"></i> Configuration du Programme</button>
+                                                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#maj"><i class="fa fa-download"></i> Note de Mise à jour</button>
                                             </div>
                                         </div>
                                     </div>
