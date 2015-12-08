@@ -31,7 +31,7 @@
             <ul class="sidebar-nav">
                 <li>
                     <a href="index.php?view=index"><i class="gi gi-stopwatch sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Accueil</span></a>
-                    <a href="index.php?view=index"><i class="fa fa-wrench sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Paramétrage</span></a>
+                    <a href="index.php?view=index&sub=parametrage"><i class="fa fa-wrench sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Paramétrage</span></a>
                 </li>
                 <li class="sidebar-header">
                     <span class="sidebar-header-title">Gestion des ASC</span>

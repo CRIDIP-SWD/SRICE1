@@ -73,118 +73,120 @@
                     <?php include "core/headerbar.php"; ?>
 
                     <!-- Page content -->
-                    <div id="page-content">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1>GESTION DES ASC</h1>
-                                <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-user"></i>
+                    <?php if(!isset($_GET['sub'])){ ?>
+                        <div id="page-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h1>GESTION DES ASC</h1>
+                                    <a href="index.php?view=asc&sub=salarie" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                                <i class="gi gi-user"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= $salarie_cls->count_salarie(); ?></strong><br>
+                                                <small>Salariés</small><br>
+                                                <strong><?= $salarie_cls->count_ad(); ?></strong><br>
+                                                <small>Ayants Droits</small>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= $salarie_cls->count_salarie(); ?></strong><br>
-                                            <small>Salariés</small><br>
-                                            <strong><?= $salarie_cls->count_ad(); ?></strong><br>
-                                            <small>Ayants Droits</small>
-                                        </h3>
-                                    </div>
-                                </a>
-                                <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-danger animation-fadeIn">
-                                            <i class="gi gi-usd"></i>
+                                    </a>
+                                    <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-danger animation-fadeIn">
+                                                <i class="gi gi-usd"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= number_format($remise_cls->compar(), 2, ',', ' '); ?></strong> €<br>
+                                                <small>A remettre en Banque</small>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= number_format($remise_cls->compar(), 2, ',', ' '); ?></strong> €<br>
-                                            <small>A remettre en Banque</small>
-                                        </h3>
+                                    </a>
+                                    <div class="block">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td style="width: 50%;">Rapprochement du compte de résultat & du bilan</td>
+                                                <td style="width: 50%; text-align: right">
+                                                    <?php
+                                                    if($asc_bilan->sum_bilan() != $asc_resultat->sum_resultat()){echo "<i class='fa fa-times-circle text-danger'></i> Erreur";}else{echo "<i class='fa fa-check-circle text-success'></i> OK";}
+                                                    ?>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
+                                        <br>
                                     </div>
-                                </a>
-                                <div class="block">
-                                    <table style="width: 100%;">
-                                        <tr>
-                                            <td style="width: 50%;">Rapprochement du compte de résultat & du bilan</td>
-                                            <td style="width: 50%; text-align: right">
-                                                <?php
-                                                if($asc_bilan->sum_bilan() != $asc_resultat->sum_resultat()){echo "<i class='fa fa-times-circle text-danger'></i> Erreur";}else{echo "<i class='fa fa-check-circle text-success'></i> OK";}
-                                                ?>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
-                                    <br>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h1 style="text-align: right;">Budget de Fonctionnement</h1>
-                                <a href="index.php?view=fct&sub=banque" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-bank"></i>
+                                <div class="col-md-6">
+                                    <h1 style="text-align: right;">Budget de Fonctionnement</h1>
+                                    <a href="index.php?view=fct&sub=banque" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                                <i class="gi gi-bank"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= number_format($banque_cls->sum_banque(), 2, ',',' '); ?></strong> €<br>
+                                                <small>En banque</small><br>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= number_format($banque_cls->sum_banque(), 2, ',',' '); ?></strong> €<br>
-                                            <small>En banque</small><br>
-                                        </h3>
-                                    </div>
-                                </a>
-                                <a href="index.php?view=fct&sub=caisse" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-euro"></i>
+                                    </a>
+                                    <a href="index.php?view=fct&sub=caisse" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                                <i class="gi gi-euro"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= number_format($caisse_cls->sum_caisse(), 2, ',',' '); ?></strong> €<br>
+                                                <small>En caisse</small><br>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= number_format($caisse_cls->sum_caisse(), 2, ',',' '); ?></strong> €<br>
-                                            <small>En caisse</small><br>
-                                        </h3>
-                                    </div>
-                                </a>
-                                <a href="index.php?view=fct&sub=livret" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="gi gi-book_open"></i>
+                                    </a>
+                                    <a href="index.php?view=fct&sub=livret" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                                <i class="gi gi-book_open"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= number_format($livret_cls->sum_livret(), 2, ',',' '); ?></strong> €<br>
+                                                <small>Dans le Livret</small><br>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= number_format($livret_cls->sum_livret(), 2, ',',' '); ?></strong> €<br>
-                                            <small>Dans le Livret</small><br>
-                                        </h3>
-                                    </div>
-                                </a>
-                                <a href="index.php?view=fct&sub=pret" class="widget widget-hover-effect1">
-                                    <div class="widget-simple">
-                                        <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                            <i class="fa fa-exchange"></i>
+                                    </a>
+                                    <a href="index.php?view=fct&sub=pret" class="widget widget-hover-effect1">
+                                        <div class="widget-simple">
+                                            <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
+                                                <i class="fa fa-exchange"></i>
+                                            </div>
+                                            <h3 class="widget-content text-right animation-pullDown">
+                                                <strong><?= number_format($pret_cls->sum_pret(), 2, ',',' '); ?></strong> €<br>
+                                                <small>En pret</small><br>
+                                            </h3>
                                         </div>
-                                        <h3 class="widget-content text-right animation-pullDown">
-                                            <strong><?= number_format($pret_cls->sum_pret(), 2, ',',' '); ?></strong> €<br>
-                                            <small>En pret</small><br>
-                                        </h3>
+                                    </a>
+                                    <div class="block">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td style="width: 50%;">Etat du Bilan Final</td>
+                                                <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;">Etat de la Balance</td>
+                                                <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%;">Etat des équivalences d'écriture</td>
+                                                <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> <strong>1 Erreur</strong></td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
+                                        <br>
                                     </div>
-                                </a>
-                                <div class="block">
-                                    <table style="width: 100%;">
-                                        <tr>
-                                            <td style="width: 50%;">Etat du Bilan Final</td>
-                                            <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%;">Etat de la Balance</td>
-                                            <td style="width: 50%; text-align: right"><i class="fa fa-check-circle text-success"></i> OK</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 50%;">Etat des équivalences d'écriture</td>
-                                            <td style="width: 50%; text-align: right"><i class="fa fa-times-circle text-danger"></i> <strong>1 Erreur</strong></td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <i class="h6">Si erreur, contacter le support technique SRICE au 0899 49 26 48.</i>
-                                    <br>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php } ?>
                     <!-- END Page Content -->
 
                     <!-- Footer -->
