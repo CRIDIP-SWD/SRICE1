@@ -14,4 +14,8 @@ $pret_cls = new fct_pret();
 
 $params_cls = new parametrage();
 
+require dirname(__DIR__)."/vendor/autoload.php";
+$dump = new \Ifsnop\Mysqldump\Mysqldump("srice", "root", "1992maxime");
+
+
 
