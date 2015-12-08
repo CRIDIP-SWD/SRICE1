@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     <?php } ?>
-                    <?php if(isset($_GET['sub']) && $_GET['sub'] == 'paramtrage'){ ?>
+                    <?php if(isset($_GET['sub']) && $_GET['sub'] == 'parametrage'){ ?>
                         <?php if(!isset($_GET['data'])){ ?>
                             <?php
                             $nom_secteur = "Paramétrage";
