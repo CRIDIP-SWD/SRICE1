@@ -218,6 +218,7 @@
                                             <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-users"></i> Utilisateurs</button>
                                             <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-building"></i> Etablissement</button>
                                             <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-cogs"></i> Configuration du Programme</button>
+                                            <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-download"></i> Note de Mise à jour</button>
                                         </div>
                                     </div>
                                 </div>
