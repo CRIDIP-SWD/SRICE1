@@ -330,8 +330,8 @@
                                                                             <td style="width: 90%;">08/12/2015</td>
                                                                             <td style="font-style: italic; text-align: center; width: 10%;">12,8 Mo</td>
                                                                             <td>
-                                                                                <button type="button" class="btn btn-sm btn-primary"><i class="fa fa-refresh fa-spin"></i></button>
-                                                                                <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i></button>
+                                                                                <button type="button" class="btn btn-xs btn-primary"><i class="fa fa-refresh fa-spin"></i></button>
+                                                                                <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i></button>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
