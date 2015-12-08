@@ -314,6 +314,9 @@
                                                     <div class="col-md-6">
                                                         <div class="block">
                                                             <div class="block-title">
+                                                                <div class="block-options pull-right">
+                                                                    <a title="" data-toggle="tooltip" class="btn btn-sm btn-success" href="javascript:void(0)" data-original-title="Nouvelle Sauvegarde"><i class="fa fa-save"></i></a>
+                                                                </div>
                                                                 <h2>Sauvegarde base de données</h2>
                                                             </div>
                                                             <div class="table-responsive">
