@@ -108,3 +108,24 @@ if(isset($_GET['action']) && $_GET['action'] == 'supp-user')
         header("Location: ../../index.php?view=index&sub=parametrage&error=supp-user");
     }
 }
+if(isset($_POST['action']) && $_POST['action'] == 'edit-etab')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    $nom_etablissement = htmlentities(addslashes($_POST['nom_etablissement']));
+    $adresse = htmlentities(addslashes($_POST['adresse']));
+    $code_postal = $_POST['code_postal'];
+    $ville = htmlentities(addslashes($_POST['ville']));
+    $telephone = $_POST['telephone'];
+    $email = $_POST['email'];
+
+    $update_etab = mysql_query("UPDATE config_etablissement SET nom_etablissement = '$nom_etablissement', adresse = '$adresse', code_postal = '$code_postal', ville = '$ville', telephone = '$telephone', email = '$email' WHERE idetablissement = 1")or die(mysql_error());
+
+    if($update_etab === TRUE)
+    {
+        header("Location: ../../index.php?view=index&sub=parametrage&success=edit-etab");
+    }else{
+        header("Location: ../../index.php?view=index&sub=parametrage&error=edit-etab");
+    }
+}

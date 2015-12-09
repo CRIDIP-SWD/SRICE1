@@ -525,7 +525,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-success" name="action" value="add-user"><i class="fa fa-check"></i> Valider</button>
+                                                    <button type="submit" class="btn btn-success" name="action" value="edit-etab"><i class="fa fa-check"></i> Valider</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -636,6 +636,17 @@
                         }); 
             </script>
         <?php } ?>
+        <?php if(isset($_GET['success']) && $_GET['success'] == 'edit-etab'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; Les informations de l'établissement ont été mis à jour.", {
+                            type: 'success',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
         
         
         
@@ -675,6 +686,17 @@
         <?php if(isset($_GET['error']) && $_GET['error'] == 'supp-user'){ ?>
             <script type="text/javascript">
                 $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la suppression d'un utilisateur", {
+                            type: 'danger',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        <?php if(isset($_GET['error']) && $_GET['error'] == 'edit-etab'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la mise à jour des informations de l'établissement", {
                             type: 'danger',
                             offset: {from: 'bottom', amount: 35},
                             align: 'right',
