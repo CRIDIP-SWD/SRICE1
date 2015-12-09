@@ -428,7 +428,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-
+                                                    <button type="submit" class="btn btn-success" name="action" value="add-user"><i class="fa fa-check"></i> Valider</button>
                                                 </div>
                                             </form>
                                         </div>
