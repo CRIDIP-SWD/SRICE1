@@ -38,7 +38,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
     $nom_fichier = $save['nom_sauvegarde'];
 
     $fichier = file_get_contents("../../data/".$nom_fichier);
-    if($fichier === TRUE)
+    if(isset($fichier))
     {
         $delete_table = mysql_drop_db("srice");
 
