@@ -14,8 +14,6 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
         echo "Impossible de sauvegarder pour cause:". $e->getMessage();
     }
 
-    if($save === TRUE)
-    {
         $ftp_connect = ftp_connect("ftp.cluster011.ovh.net", 21, 5);
         ftp_login($ftp_connect, "mockelynhp", "1992Maxime");
         ftp_pasv($ftp_connect, true);
@@ -27,7 +25,4 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
         }else{
             header("Location: ../../index.php?view=index&sub=parametrage&error=new-save-bdd");
         }
-    }else{
-        header("Location: ../../index.php?view=index&sub=parametrage&warning=file-no-save");
-    }
 }
