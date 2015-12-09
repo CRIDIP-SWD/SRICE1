@@ -43,6 +43,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
         $delete_table = mysql_query("DROP DATABASE srice")or die(mysql_error());
 
         $fichier_array = explode(";", $fichier);
+        $create_db = mysql_query("CREATE DATABASE srice CHARACTER SET 'utf8';")or die(mysql_error());
         foreach($fichier_array as $val)
         {
             mysql_query($val);
