@@ -74,3 +74,21 @@ if(isset($_GET['action']) && $_GET['action'] == 'del-save-bdd')
         header("Location: ../../index.php?view=index&sub=parametrage&error=del-save-bdd");
     }
 }
+if(isset($_POST['action']) && $_POST['action'] == 'add-user')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+    $pass_md5 = md5($password);
+
+    $add_user = mysql_query("INSERT INTO membre(iduser, login, pass_md5, groupe) VALUES (NULL, '$login', '$pass_md5', '1')")or die(mysql_error());
+
+    if($add_user === TRUE)
+    {
+        header("Location: ../../index.php?view=index&sub=parametrage&success=add-user");
+    }else{
+        header("Location: ../../index.php?view=index&sub=parametrage&error=add-user");
+    }
+}

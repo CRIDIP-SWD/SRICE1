@@ -517,7 +517,17 @@
                         }); 
             </script>
         <?php } ?>
-        
+        <?php if(isset($_GET['success']) && $_GET['success'] == 'add-user'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; L'utilisateur à bien été ajouté", {
+                            type: 'success',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
         
         
         <?php if(isset($_GET['error']) && $_GET['error'] == 'new-save-bdd'){ ?>
@@ -542,6 +552,18 @@
                         }); 
             </script>
         <?php } ?>
+        <?php if(isset($_GET['error']) && $_GET['error'] == 'add-user'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de l'ajout d'un utilisateur", {
+                            type: 'danger',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
         
     
         <?php if(isset($_GET['warning']) && $_GET['warning'] == 'file-not-found'){ ?>
