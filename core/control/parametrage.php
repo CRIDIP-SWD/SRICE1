@@ -40,7 +40,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
     $fichier = file_get_contents("../../data/".$nom_fichier);
     if(isset($fichier))
     {
-        $delete_table = mysql_drop_db("srice");
+        $delete_table = mysql_query("DROP DATABASE srice")or die(mysql_error());
 
         $fichier_array = explode(";", $fichier);
         foreach($fichier_array as $val)
