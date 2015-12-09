@@ -387,9 +387,12 @@
                                                                     {
                                                                     ?>
                                                                         <tr>
-                                                                            <td class="text-center">1</td>
-                                                                            <td class="text-center"><img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle"></td>
-                                                                            <td><a href="javascript:void(0)">client1</a></td>
+                                                                            <td class="text-center"><?= $user['iduser']; ?></td>
+                                                                            <td class="text-center"><?= $user['login']; ?></td>
+                                                                            <td>
+                                                                                <button type="button" class="btn btn-sm btn-default"><i class="fa fa-edit"></i></button>
+                                                                                <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i></button>
+                                                                            </td>
                                                                         </tr>
                                                                         <?php } ?>
                                                                     </tbody>
