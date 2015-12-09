@@ -411,8 +411,19 @@
                 });
             </script>
         <?php } ?>
-
-
+        <?php if(isset($_GET['success']) && $_GET['success'] == 'rest-save-bdd'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; La base de donnée à été restauré", {
+                            type: 'success',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
+        
         <?php if(isset($_GET['error']) && $_GET['error'] == 'new-save-bdd'){ ?>
             <script type="text/javascript">
                 $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la sauvegarde ", {
@@ -424,6 +435,19 @@
                         });
             </script>
         <?php } ?>
+    
+        <?php if(isset($_GET['warning']) && $_GET['warning'] == 'file-not-found'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-warning fa-2x'></i> &nbsp; Le fichier de sauvegarde est introuvable", {
+                            type: 'warning',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
 
     </body>
 </html>
