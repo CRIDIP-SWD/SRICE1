@@ -335,7 +335,7 @@
                                                                     {
                                                                     ?>
                                                                         <tr>
-                                                                            <td><?= date("d/m/Y", $save['date_sauvegarde']); ?></td>
+                                                                            <td><?= date("d/m/Y à H:i", $save['date_sauvegarde']); ?></td>
                                                                             <td><?= round($save['taille_sauvegarde'], 2); ?> Mo</td>
                                                                             <td>
                                                                                 <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=rest-save-bdd&idsauvegarde=<?= $save['id']; ?>'"><i class="fa fa-refresh fa-spin"></i></button>
