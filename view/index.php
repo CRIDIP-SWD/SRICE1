@@ -390,8 +390,7 @@
                                                                             <td class="text-center"><?= $user['iduser']; ?></td>
                                                                             <td class="text-center"><?= $user['login']; ?></td>
                                                                             <td>
-                                                                                <button type="button" class="btn btn-sm btn-default"><i class="fa fa-edit"></i></button>
-                                                                                <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-remove"></i></button>
+                                                                                <button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=supp-user&iduser=<?= $user['iduser']; ?>'"><i class="fa fa-remove"></i></button>
                                                                             </td>
                                                                         </tr>
                                                                         <?php } ?>
