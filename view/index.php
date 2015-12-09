@@ -412,9 +412,20 @@
                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 <h3 class="modal-title"><i class="fa fa-user-md"></i> Ajout d'un utilisateur</h3>
                                             </div>
-                                            <form class="form-horizontal" action="" method="post">
+                                            <form class="form-horizontal" action="<?= ROOT,CORE,CONTROL; ?>parametrage.php" method="post">
                                                 <div class="modal-body">
-
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-text-input">Nom d'utilisateur</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-text-input" name="login" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-password-input">Mot de Passe</label>
+                                                        <div class="col-md-9">
+                                                            <input type="password" id="example-password-input" name="password" class="form-control">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
 
@@ -466,6 +477,8 @@
         <!-- Load and execute javascript code used only in this page -->
         <script src="<?= ROOT,ASSETS,JS; ?>pages/index2.js"></script>
         <script src="<?= ROOT,ASSETS,JS; ?>pages/tablesDatatables.js"></script>
+        <script src="<?= ROOT,ASSETS,JS; ?>pages/formsGeneral.js"></script>
+        <script>$(function(){ FormsGeneral.init(); });</script>
         <script>$(function(){ TablesDatatables.init(); });</script>
         <script>$(function(){ Index2.init(); });</script>
 
