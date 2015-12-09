@@ -11,7 +11,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
         $save =  $dump->start("../../data/".$nom_save);
         $filesize = filesize("../../date/".$nom_save);
     }catch (Exception $e){
-        header("Location: ../../index.php?view=index&sub=parametrage&warning=file-no-save");
+        echo "Impossible de sauvegarder pour cause:". $e->getMessage();
     }
 
     if($save === TRUE)
