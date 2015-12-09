@@ -406,7 +406,7 @@
                     type: 'success',
                     offset: {from: 'top', amount: 0},
                     align: 'center',
-                    width: '990px',
+                    width: '990',
                     allow_dismiss: true
                 });
             </script>
