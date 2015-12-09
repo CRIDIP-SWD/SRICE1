@@ -336,7 +336,7 @@
                                                                     ?>
                                                                         <tr>
                                                                             <td><?= date("d/m/Y", $save['date_sauvegarde']); ?></td>
-                                                                            <td><?= round($save['taille_sauvegarde'], 2); ?></td>
+                                                                            <td><?= round($save['taille_sauvegarde'], 2); ?> Mo</td>
                                                                             <td>
                                                                                 <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=rest-save-bdd&idsauvegarde=<?= $save['id']; ?>'"><i class="fa fa-refresh fa-spin"></i></button>
                                                                                 <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Supprimer" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=del-save-bdd&idsauvegarde=<?= $save['id']; ?>'"><i class="fa fa-remove"></i></button>
