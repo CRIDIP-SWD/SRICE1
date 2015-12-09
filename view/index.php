@@ -353,11 +353,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="users" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div id="users" class="modal-users fade" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-lg bg-info">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <button type="button" class="close" data-dismiss="modal-users" aria-hidden="true">&times;</button>
                                                 <h3 class="modal-title"><i class="fa fa-users"></i> Utilisateurs</h3>
                                             </div>
                                             <div class="modal-body">
