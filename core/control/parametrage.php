@@ -4,7 +4,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
     include "../config.php";
     include "../classe.php";
 
-    $nom_save = "srice-".date('d').date('m').date('Y')."-nometablissement.sql";
+    $nom_save = "srice-".date('d').date('m').date('Y').date('H').date('i')."-nometablissement.sql";
 
     try{
         $dump = new \Ifsnop\Mysqldump\Mysqldump("mysql:host=localhost;dbname=srice", "root", "1992maxime");
