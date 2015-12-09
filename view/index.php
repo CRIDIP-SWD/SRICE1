@@ -353,6 +353,21 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="users" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg bg-info">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h3 class="modal-title"><i class="fa fa-users"></i> Utilisateurs</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         <?php } ?>
@@ -418,6 +433,18 @@
                         }); 
             </script>
         <?php } ?>
+        <?php if(isset($_GET['success']) && $_GET['success'] == 'del-save-bdd'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; La sauvegarde de la base de donnée à été supprimer", {
+                            type: 'success',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
         
         
         <?php if(isset($_GET['error']) && $_GET['error'] == 'new-save-bdd'){ ?>
@@ -431,6 +458,18 @@
                         });
             </script>
         <?php } ?>
+        <?php if(isset($_GET['error']) && $_GET['error'] == 'del-save-bdd'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la suppression de la sauvegarde de la base de donnée.", {
+                            type: 'danger',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
     
         <?php if(isset($_GET['warning']) && $_GET['warning'] == 'file-not-found'){ ?>
             <script type="text/javascript">
