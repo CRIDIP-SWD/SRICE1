@@ -41,13 +41,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
     if(isset($fichier))
     {
         $delete_table = mysql_query("DROP DATABASE srice")or die(mysql_error());
-
-        $fichier_array = explode(";", $fichier);
-        $create_db = mysql_query("CREATE DATABASE srice CHARACTER SET 'utf8';")or die(mysql_error());
-        foreach($fichier_array as $val)
-        {
-            mysql_query($val);
-        }
+        $import = system("cat /var/www/vps221243.ovh.net/srice/data/".$nom_fichier." | mysql --host=localhost --user=root --password=1992maxime --database=srice");
         header("Location: ../../index.php?view=index?sub=parametrage&success=rest-save-bdd");
     }else{
         header("Location: ../../index.php?view=index?sub=parametrage&warning=file-not-found");
