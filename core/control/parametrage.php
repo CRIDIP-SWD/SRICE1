@@ -36,4 +36,19 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
     $sql_save = mysql_query("SELECT * FROM sauvegarde WHERE id = '$idsauvegarde'")or die(mysql_error());
     $save = mysql_fetch_array($sql_save);
     $nom_fichier = $save['nom_sauvegarde'];
+
+    $fichier = file_get_contents("../../data/".$nom_fichier);
+    if($fichier === TRUE)
+    {
+        $delete_table = mysql_drop_db("srice");
+
+        $fichier_array = explode(";", $fichier);
+        foreach($fichier_array as $val)
+        {
+            mysql_query($val);
+        }
+        header("Location: ../../index.php?view=index?sub=parametrage&success=rest-save-bdd");
+    }else{
+        header("Location: ../../index.php?view=index?sub=parametrage&warning=file-not-found");
+    }
 }

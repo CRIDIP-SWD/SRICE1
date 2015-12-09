@@ -113,4 +113,5 @@ class parametrage
         $data = mysql_result($sql, 0);
         return $data;
     }
+
 }
