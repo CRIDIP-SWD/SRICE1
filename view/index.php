@@ -527,6 +527,18 @@
                         }); 
             </script>
         <?php } ?>
+        <?php if(isset($_GET['success']) && $_GET['success'] == 'supp-user'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; L'utilisateur à été supprimé", {
+                            type: 'success',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
         
         
         <?php if(isset($_GET['error']) && $_GET['error'] == 'new-save-bdd'){ ?>
@@ -562,6 +574,18 @@
                         }); 
             </script>
         <?php } ?>
+        <?php if(isset($_GET['error']) && $_GET['error'] == 'supp-user'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la suppression d'un utilisateur", {
+                            type: 'danger',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        }); 
+            </script>
+        <?php } ?>
+        
         
         
     

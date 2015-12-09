@@ -92,3 +92,19 @@ if(isset($_POST['action']) && $_POST['action'] == 'add-user')
         header("Location: ../../index.php?view=index&sub=parametrage&error=add-user");
     }
 }
+if(isset($_GET['action']) && $_GET['action'] == 'supp-user')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    $iduser = $_GET['iduser'];
+
+    $delete_user = mysql_query("DELETE FROM membre WHERE iduser = '$iduser'")or die(mysql_error());
+
+    if($delete_user === TRUE)
+    {
+        header("Location: ../../index.php?view=index&sub=parametrage&success=supp-user");
+    }else{
+        header("Location: ../../index.php?view=index&sub=parametrage&error=supp-user");
+    }
+}
