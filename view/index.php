@@ -404,7 +404,7 @@
             <script type="text/javascript">
                 $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; Base de donnée Sauvegardé", {
                     type: 'success',
-                    offset: {from: 'bottom', amount: 0},
+                    offset: {from: 'bottom', amount: 35},
                     align: 'right',
                     width: 'auto',
                     allow_dismiss: true
