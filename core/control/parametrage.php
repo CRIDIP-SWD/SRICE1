@@ -6,9 +6,13 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
 
     $nom_save = "srice-".date('d').date('m').date('Y')."-nometablissement.sql";
 
-    $dump = new \Ifsnop\Mysqldump\Mysqldump("mysql:host=localhost;dbname=srice", "root", "1992maxime");
-    $save =  $dump->start("../../data/".$nom_save);
-    $filesize = filesize("../../date/".$nom_save);
+    try{
+        $dump = new \Ifsnop\Mysqldump\Mysqldump("mysql:host=localhost;dbname=srice", "root", "1992maxime");
+        $save =  $dump->start("../../data/".$nom_save);
+        $filesize = filesize("../../date/".$nom_save);
+    }catch (Exception $e){
+        header("Location: ../../index.php?view=index&sub=parametrage&warning=file-no-save");
+    }
 
     if($save === TRUE)
     {
