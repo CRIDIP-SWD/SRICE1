@@ -9,7 +9,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
     try{
         $dump = new \Ifsnop\Mysqldump\Mysqldump("mysql:host=localhost;dbname=srice", "root", "1992maxime");
         $save =  $dump->start("../../data/".$nom_save);
-        $filesize = filesize("../../data/".$nom_save);
+        $filesize = filesize("../../data/".$nom_save)/100000;
     }catch (Exception $e){
         echo "Impossible de sauvegarder pour cause:". $e->getMessage();
     }
