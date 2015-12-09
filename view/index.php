@@ -374,29 +374,24 @@
                                                             <div class="table-responsive">
                                                                 <table id="example-datatable" class="table table-vcenter table-condensed table-bordered">
                                                                     <thead>
-                                                                    <tr>
-                                                                        <th class="text-center">ID</th>
-                                                                        <th class="text-center"><i class="gi gi-user"></i></th>
-                                                                        <th>Client</th>
-                                                                        <th>Email</th>
-                                                                        <th>Subscription</th>
-                                                                        <th class="text-center">Actions</th>
-                                                                    </tr>
+                                                                        <tr>
+                                                                            <th class="text-center">ID</th>
+                                                                            <th class="text-center">Login</th>
+                                                                            <th class="text-center">Actions</th>
+                                                                        </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                    <tr>
-                                                                        <td class="text-center">1</td>
-                                                                        <td class="text-center"><img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle"></td>
-                                                                        <td><a href="javascript:void(0)">client1</a></td>
-                                                                        <td>client1@company.com</td>
-                                                                        <td><span class="label label-primary">Personal</span></td>
-                                                                        <td class="text-center">
-                                                                            <div class="btn-group">
-                                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-xs btn-default"><i class="fa fa-pencil"></i></a>
-                                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                    <?php
+                                                                    $sql_user = mysql_query("SELECT * FROM membre WHERE login != 'administrateur'")or die(mysql_error());
+                                                                    while($user = mysql_fetch_array($sql_user))
+                                                                    {
+                                                                    ?>
+                                                                        <tr>
+                                                                            <td class="text-center">1</td>
+                                                                            <td class="text-center"><img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle"></td>
+                                                                            <td><a href="javascript:void(0)">client1</a></td>
+                                                                        </tr>
+                                                                        <?php } ?>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
