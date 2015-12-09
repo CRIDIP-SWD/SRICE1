@@ -400,5 +400,16 @@
         <!-- Load and execute javascript code used only in this page -->
         <script src="<?= ROOT,ASSETS,JS; ?>pages/index2.js"></script>
         <script>$(function(){ Index2.init(); });</script>
+        <?php if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-database'></i>Base de donnée Sauvegardé", {
+                    type: 'success',
+                    offset: {from: 'top', amount: 20},
+                    align: 'center',
+                    width: 'auto',
+                    allow_dismiss: true
+                });
+            </script>
+        <?php } ?>
     </body>
 </html>
