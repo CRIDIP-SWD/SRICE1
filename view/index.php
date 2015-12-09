@@ -366,7 +366,7 @@
                                                         <div class="block">
                                                             <div class="block-title">
                                                                 <div class="block-options pull-right">
-                                                                    <a title="" data-toggle="modal" class="btn btn-sm btn-success" data-target="#add-user"><i class="fa fa-plus"></i></a>
+                                                                    <a title="" data-toggle="modal" class="btn btn-sm btn-success" data-target="#add-user" data-dismiss="modal-users"><i class="fa fa-plus"></i></a>
                                                                 </div>
                                                                 <h2>Liste des Utilisateurs</h2>
                                                             </div>
