@@ -9,7 +9,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
     try{
         $dump = new \Ifsnop\Mysqldump\Mysqldump("mysql:host=localhost;dbname=srice", "root", "1992maxime");
         $save =  $dump->start("../../data/".$nom_save);
-        $filesize = filesize("../../date/".$nom_save);
+        $filesize = filesize("../../data/".$nom_save);
     }catch (Exception $e){
         echo "Impossible de sauvegarder pour cause:". $e->getMessage();
     }
@@ -25,4 +25,15 @@ if(isset($_GET['action']) && $_GET['action'] == 'new-save-bdd')
         }else{
             header("Location: ../../index.php?view=index&sub=parametrage&error=new-save-bdd");
         }
+}
+if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    $idsauvegarde = $_GET['idsauvegarde'];
+
+    $sql_save = mysql_query("SELECT * FROM sauvegarde WHERE id = '$idsauvegarde'")or die(mysql_error());
+    $save = mysql_fetch_array($sql_save);
+    $nom_fichier = $save['nom']
 }

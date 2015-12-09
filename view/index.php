@@ -338,8 +338,8 @@
                                                                             <td><?= date("d/m/Y", $save['date_sauvegarde']); ?></td>
                                                                             <td><?= round($save['taille_sauvegarde'], 2); ?></td>
                                                                             <td>
-                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=rest-save-bdd&idsaauvegarde=<?= $save['id']; ?>'"><i class="fa fa-refresh fa-spin"></i></button>
-                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Supprimer" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=del-save-bdd&idsaauvegarde=<?= $save['id']; ?>'"><i class="fa fa-remove"></i></button>
+                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Restaurer" class="btn btn-xs btn-primary" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=rest-save-bdd&idsauvegarde=<?= $save['id']; ?>'"><i class="fa fa-refresh fa-spin"></i></button>
+                                                                                <button type="button" data-toggle="tooltip" data-placement="top" data-original-title="Supprimer" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=del-save-bdd&idsauvegarde=<?= $save['id']; ?>'"><i class="fa fa-remove"></i></button>
                                                                             </td>
                                                                         </tr>
                                                                     <?php } ?>
@@ -411,5 +411,19 @@
                 });
             </script>
         <?php } ?>
+
+
+        <?php if(isset($_GET['error']) && $_GET['error'] == 'new-save-bdd'){ ?>
+            <script type="text/javascript">
+                $.bootstrapGrowl("<i class='fa fa-remove fa-2x'></i> &nbsp; Erreur lors de la sauvegarde ", {
+                            type: 'danger',
+                            offset: {from: 'bottom', amount: 35},
+                            align: 'right',
+                            width: 'auto',
+                            allow_dismiss: true
+                        });
+            </script>
+        <?php } ?>
+
     </body>
 </html>
