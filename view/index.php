@@ -353,11 +353,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="users" class="modal-users fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div id="users" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-lg bg-info">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal-users" aria-hidden="true">&times;</button>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 <h3 class="modal-title"><i class="fa fa-users"></i> Utilisateurs</h3>
                                             </div>
                                             <div class="modal-body">
@@ -366,7 +366,7 @@
                                                         <div class="block">
                                                             <div class="block-title">
                                                                 <div class="block-options pull-right">
-                                                                    <a title="" data-toggle="modal" class="btn btn-sm btn-success" data-target="#add-user" data-dismiss="modal-users"><i class="fa fa-plus"></i></a>
+                                                                    <a title="" data-toggle="modal" class="btn btn-sm btn-success" data-target="#add-user"><i class="fa fa-plus"></i></a>
                                                                 </div>
                                                                 <h2>Liste des Utilisateurs</h2>
                                                             </div>
