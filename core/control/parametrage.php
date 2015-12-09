@@ -43,8 +43,34 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
         $delete_table = mysql_query("DROP DATABASE srice")or die(mysql_error());
         $create_db = mysql_query("CREATE DATABASE srice")or die(mysql_error());
         $import = system("cat /var/www/vps221243.ovh.net/srice/data/".$nom_fichier." | mysql --host=localhost --user=root --password=1992maxime --database=srice");
-        header("Location: ../../index.php?view=index?sub=parametrage&success=rest-save-bdd");
+        header("Location: ../../index.php?view=index&sub=parametrage&success=rest-save-bdd");
     }else{
-        header("Location: ../../index.php?view=index?sub=parametrage&warning=file-not-found");
+        header("Location: ../../index.php?view=index&sub=parametrage&warning=file-not-found");
+    }
+}
+if(isset($_GET['action']) && $_GET['action'] == 'del-save-bdd')
+{
+    include "../config.php";
+    include "../classe.php";
+
+    $idsauvegarde = $_GET['idsauvegarde'];
+
+    $sql = mysql_query("SELECT * FROM sauvegarde WHERE id = '$idsauvegarde'")or die(mysql_error());
+    $data = mysql_fetch_array($sql);
+    $nom_fichier = $data['nom_sauvegarde'];
+
+    $del_fichier = unlink("../../data/".$nom_fichier);
+
+    $ftp_connect = ftp_connect("ftp.cluster011.ovh.net", 21, 5);
+    ftp_login($ftp_connect, "mockelynhp", "1992Maxime");
+    ftp_pasv($ftp_connect, true);
+    $del_fichier .= ftp_delete($ftp_connect, "/www/save/srice/".$nom_fichier);
+    $del_fichier .= mysql_query("DELETE FROM sauvegarde WHERE id = '$idsauvegarde'")or die(mysql_error());
+
+    if($del_fichier === TRUE)
+    {
+        header("Location: ../../index.php?view=index&sub=parametrage&success=del-save-bdd");
+    }else{
+        header("Location: ../../index.php?view=index&sub=parametrage&error=del-save-bdd");
     }
 }
