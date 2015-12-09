@@ -402,9 +402,9 @@
         <script>$(function(){ Index2.init(); });</script>
         <?php if(isset($_GET['success']) && $_GET['success'] == 'new-save-bdd'){ ?>
             <script type="text/javascript">
-                $.bootstrapGrowl("<i class='fa fa-database fa-2x'></i> &nbsp; Base de donnée Sauvegardé", {
+                $.bootstrapGrowl("<i class='fa fa-check fa-2x'></i> &nbsp; Base de donnée Sauvegardé", {
                     type: 'success',
-                    offset: {from: 'top', amount: 20},
+                    offset: {from: 'top', amount: 0},
                     align: 'center',
                     width: '80%',
                     allow_dismiss: true
