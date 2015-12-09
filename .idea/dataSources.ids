@@ -1,6 +1,1217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - srice@vps221243.ovh.net" uuid="753e7c7d-01b8-4eae-a723-f790f9a4924d">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  <data-source name="MySQL - srice@vps221243.ovh.net" uuid="605d389a-9da9-401e-95f2-dd23b49a9538">
+    <database-info product="MySQL" version="5.5.46-0+deb8u1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="srice"/>
+      <table id="2" parent="1" name="achat_presta"/>
+      <table id="3" parent="1" name="ayant_droit"/>
+      <table id="4" parent="1" name="bilan"/>
+      <table id="5" parent="1" name="billet_ayant_droit"/>
+      <table id="6" parent="1" name="billet_salarie"/>
+      <table id="7" parent="1" name="charge_fixe"/>
+      <table id="8" parent="1" name="compta_balance"/>
+      <table id="9" parent="1" name="compta_banque"/>
+      <table id="10" parent="1" name="compta_bilan_actif"/>
+      <table id="11" parent="1" name="compta_bilan_passif"/>
+      <table id="12" parent="1" name="compta_caisse"/>
+      <table id="13" parent="1" name="compta_compte"/>
+      <table id="14" parent="1" name="compta_livret"/>
+      <table id="15" parent="1" name="compta_mvm"/>
+      <table id="16" parent="1" name="compta_plan"/>
+      <table id="17" parent="1" name="compta_pret"/>
+      <table id="18" parent="1" name="compta_resultat"/>
+      <table id="19" parent="1" name="config_etablissement"/>
+      <table id="20" parent="1" name="cpt_resultat"/>
+      <table id="21" parent="1" name="famille_prestation"/>
+      <table id="22" parent="1" name="ligne_billet_ayant_droit"/>
+      <table id="23" parent="1" name="ligne_billet_salarie"/>
+      <table id="24" parent="1" name="log_systeme"/>
+      <table id="25" parent="1" name="maj"/>
+      <table id="26" parent="1" name="membre"/>
+      <table id="27" parent="1" name="module"/>
+      <table id="28" parent="1" name="prestation"/>
+      <table id="29" parent="1" name="produit_fixe"/>
+      <table id="30" parent="1" name="reg_billet_ayant_droit"/>
+      <table id="31" parent="1" name="reg_billet_salarie"/>
+      <table id="32" parent="1" name="reg_remb_ayant_droit"/>
+      <table id="33" parent="1" name="reg_remb_salarie"/>
+      <table id="34" parent="1" name="remb_ayant_droit"/>
+      <table id="35" parent="1" name="remb_salarie"/>
+      <table id="36" parent="1" name="remise_banque"/>
+      <table id="37" parent="1" name="remise_banque_chq"/>
+      <table id="38" parent="1" name="remise_banque_esp"/>
+      <table id="39" parent="1" name="salarie"/>
+      <table id="40" parent="1" name="sauvegarde"/>
+      <table id="41" parent="1" name="solde_caisse"/>
+      <column id="42" parent="2" name="idachatpresta">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="43" parent="2" name="date_achat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="2" name="idprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="45" parent="2" name="qte">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="46" parent="2" name="total_achat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="47" parent="2" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="48" parent="2" name="PRIMARY">
+        <columns>idachatpresta</columns>
+        <primary>1</primary>
+      </key>
+      <column id="49" parent="3" name="idayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="50" parent="3" name="idsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="51" parent="3" name="nom_ayant_droit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="52" parent="3" name="prenom_ayant_droit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="53" parent="3" name="date_naissance_ayant_droit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="54" parent="3" name="solde_ayant_droit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="55" parent="3" name="PRIMARY">
+        <columns>idayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="4" name="idcasebilan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="57" parent="4" name="type_bilan">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="58" parent="4" name="libelle_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="59" parent="4" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="4" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="4" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="62" parent="4" name="PRIMARY">
+        <columns>idcasebilan</columns>
+        <primary>1</primary>
+      </key>
+      <column id="63" parent="5" name="idbilletayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="64" parent="5" name="idayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="65" parent="5" name="date_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="66" parent="5" name="idtypetraitement">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="67" parent="5" name="total_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="68" parent="5" name="etat_facture">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="69" parent="5" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="70" parent="5" name="decremente">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="71" parent="5" name="PRIMARY">
+        <columns>idbilletayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="72" parent="6" name="idbilletsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="73" parent="6" name="idsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="74" parent="6" name="date_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="75" parent="6" name="idtypetraitement">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="76" parent="6" name="total_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="77" parent="6" name="etat_billet_salarie">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="78" parent="6" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="79" parent="6" name="decremente">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="80" parent="6" name="PRIMARY">
+        <columns>idbilletsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="81" parent="7" name="idchargefixe">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="82" parent="7" name="designation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="83" parent="7" name="date_charge_fixe">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="84" parent="7" name="montant_charge">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="85" parent="7" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="86" parent="7" name="PRIMARY">
+        <columns>idchargefixe</columns>
+        <primary>1</primary>
+      </key>
+      <column id="87" parent="8" name="idcomptabalance">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="88" parent="8" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="89" parent="8" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="90" parent="8" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="91" parent="8" name="PRIMARY">
+        <columns>idcomptabalance</columns>
+        <primary>1</primary>
+      </key>
+      <column id="92" parent="9" name="idcomptabanque">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="93" parent="9" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="94" parent="9" name="date_bq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="95" parent="9" name="desc_bq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="96" parent="9" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="97" parent="9" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="98" parent="9" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="99" parent="9" name="PRIMARY">
+        <columns>idcomptabanque</columns>
+        <primary>1</primary>
+      </key>
+      <column id="100" parent="10" name="idcptbilanactif">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="101" parent="10" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="102" parent="10" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="103" parent="10" name="montant">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="104" parent="10" name="PRIMARY">
+        <columns>idcptbilanactif</columns>
+        <primary>1</primary>
+      </key>
+      <column id="105" parent="11" name="idcptbilanpassif">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="106" parent="11" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="107" parent="11" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="108" parent="11" name="montant">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="109" parent="11" name="PRIMARY">
+        <columns>idcptbilanpassif</columns>
+        <primary>1</primary>
+      </key>
+      <column id="110" parent="12" name="idcomptacaisse">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="111" parent="12" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="112" parent="12" name="date_caisse">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="113" parent="12" name="desc_caisse">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="114" parent="12" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="115" parent="12" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="116" parent="12" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="117" parent="12" name="PRIMARY">
+        <columns>idcomptacaisse</columns>
+        <primary>1</primary>
+      </key>
+      <column id="118" parent="13" name="idcomptacompte">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="119" parent="13" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="120" parent="13" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="121" parent="13" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="122" parent="13" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="123" parent="13" name="PRIMARY">
+        <columns>idcomptacompte</columns>
+        <primary>1</primary>
+      </key>
+      <column id="124" parent="14" name="idcomptalivret">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="125" parent="14" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="126" parent="14" name="date_livret">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="127" parent="14" name="desc_livret">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="128" parent="14" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="129" parent="14" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="130" parent="14" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="131" parent="14" name="PRIMARY">
+        <columns>idcomptalivret</columns>
+        <primary>1</primary>
+      </key>
+      <column id="132" parent="15" name="idcomptamvm">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="133" parent="15" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="134" parent="15" name="date_mvm">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="135" parent="15" name="desc_mvm">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="136" parent="15" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="137" parent="15" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="138" parent="15" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="139" parent="15" name="PRIMARY">
+        <columns>idcomptamvm</columns>
+        <primary>1</primary>
+      </key>
+      <column id="140" parent="16" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="141" parent="16" name="type_plan">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="142" parent="16" name="nom_origine">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="143" parent="16" name="nom_util">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="144" parent="16" name="PRIMARY">
+        <columns>idcomptaplan</columns>
+        <primary>1</primary>
+      </key>
+      <column id="145" parent="17" name="idcomptapret">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="146" parent="17" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="147" parent="17" name="date_pret">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="148" parent="17" name="desc_pret">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="149" parent="17" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="150" parent="17" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="151" parent="17" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="152" parent="17" name="PRIMARY">
+        <columns>idcomptapret</columns>
+        <primary>1</primary>
+      </key>
+      <column id="153" parent="18" name="idresultat">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="154" parent="18" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="155" parent="18" name="idcomptaplan">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="156" parent="18" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="157" parent="18" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="158" parent="18" name="PRIMARY">
+        <columns>idresultat</columns>
+        <primary>1</primary>
+      </key>
+      <column id="159" parent="19" name="idetablissement">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="160" parent="19" name="nom_etablissement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="161" parent="19" name="remise_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="162" parent="19" name="remise_ayant_droit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="163" parent="19" name="prefix_achat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="164" parent="19" name="prefix_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="165" parent="19" name="num_license">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="166" parent="19" name="date_derniere_cloture">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="167" parent="19" name="date_prochaine_cloture">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="168" parent="19" name="PRIMARY">
+        <columns>idetablissement</columns>
+        <primary>1</primary>
+      </key>
+      <column id="169" parent="20" name="idcptresultat">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="170" parent="20" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="171" parent="20" name="date_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="172" parent="20" name="designation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="173" parent="20" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="174" parent="20" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="175" parent="20" name="PRIMARY">
+        <columns>idcptresultat</columns>
+        <primary>1</primary>
+      </key>
+      <column id="176" parent="21" name="idfamilleprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="177" parent="21" name="designation_famille">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="178" parent="21" name="PRIMARY">
+        <columns>idfamilleprestation</columns>
+        <primary>1</primary>
+      </key>
+      <column id="179" parent="22" name="idlignebilletayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="180" parent="22" name="idbilletayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="181" parent="22" name="idprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="182" parent="22" name="qte">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="183" parent="22" name="part_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="184" parent="22" name="part_ce">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="185" parent="22" name="hors_quota">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="186" parent="22" name="commentaire">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="187" parent="22" name="PRIMARY">
+        <columns>idlignebilletayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="188" parent="23" name="idlignebilletsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="189" parent="23" name="idbilletsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="190" parent="23" name="idprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="191" parent="23" name="qte">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="192" parent="23" name="part_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="193" parent="23" name="part_ce">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="194" parent="23" name="hors_quota">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="195" parent="23" name="commentaire">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="196" parent="23" name="PRIMARY">
+        <columns>idlignebilletsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="197" parent="24" name="idlog">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="198" parent="24" name="date_log">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="199" parent="24" name="heure_log">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="200" parent="24" name="libelle_log">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="201" parent="24" name="etat_log">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="202" parent="24" name="PRIMARY">
+        <columns>idlog</columns>
+        <primary>1</primary>
+      </key>
+      <column id="203" parent="25" name="idmaj">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="204" parent="25" name="version_latest">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="205" parent="25" name="build">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="206" parent="25" name="PRIMARY">
+        <columns>idmaj</columns>
+        <primary>1</primary>
+      </key>
+      <column id="207" parent="26" name="iduser">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="208" parent="26" name="login">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="209" parent="26" name="pass_md5">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="210" parent="26" name="groupe">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="211" parent="26" name="PRIMARY">
+        <columns>iduser</columns>
+        <primary>1</primary>
+      </key>
+      <column id="212" parent="27" name="idmodule">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="213" parent="27" name="designation_module">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="214" parent="27" name="etat_module">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="215" parent="27" name="PRIMARY">
+        <columns>idmodule</columns>
+        <primary>1</primary>
+      </key>
+      <column id="216" parent="28" name="idprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="217" parent="28" name="idfamilleprestation">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="218" parent="28" name="designation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="219" parent="28" name="debut_validite">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="220" parent="28" name="fin_validite">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="221" parent="28" name="part_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="222" parent="28" name="part_ce">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="223" parent="28" name="cout_presta">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="224" parent="28" name="nb_max_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="225" parent="28" name="nb_stock">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="226" parent="28" name="hors_quota">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="227" parent="28" name="PRIMARY">
+        <columns>idprestation</columns>
+        <primary>1</primary>
+      </key>
+      <column id="228" parent="29" name="idproduitfixe">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="229" parent="29" name="designation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="230" parent="29" name="date_produit_fixe">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="231" parent="29" name="montant_produit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="232" parent="29" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="233" parent="29" name="PRIMARY">
+        <columns>idproduitfixe</columns>
+        <primary>1</primary>
+      </key>
+      <column id="234" parent="30" name="idregbilletayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="235" parent="30" name="idbilletayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="236" parent="30" name="type_reglement">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="237" parent="30" name="montant_reglement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="238" parent="30" name="banque_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="239" parent="30" name="porteur_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="240" parent="30" name="num_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="241" parent="30" name="pointe">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="242" parent="30" name="PRIMARY">
+        <columns>idregbilletayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="243" parent="31" name="idregbilletsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="244" parent="31" name="idbilletsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="245" parent="31" name="type_reglement">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="246" parent="31" name="montant_reglement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="247" parent="31" name="banque_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="248" parent="31" name="porteur_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="249" parent="31" name="num_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="250" parent="31" name="pointe">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="251" parent="31" name="PRIMARY">
+        <columns>idregbilletsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="252" parent="32" name="idregrembayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="253" parent="32" name="idrembayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="254" parent="32" name="montant_reglement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="255" parent="32" name="num_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="256" parent="32" name="PRIMARY">
+        <columns>idregrembayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="257" parent="33" name="idregrembsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="258" parent="33" name="idrembsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="259" parent="33" name="montant_reglement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="260" parent="33" name="num_chq">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="261" parent="33" name="PRIMARY">
+        <columns>idregrembsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="262" parent="34" name="idrembayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="263" parent="34" name="idayantdroit">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="264" parent="34" name="prestation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="265" parent="34" name="date_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="266" parent="34" name="montant_prestation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="267" parent="34" name="part_ce">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="268" parent="34" name="etat_facture">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="269" parent="34" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="270" parent="34" name="PRIMARY">
+        <columns>idrembayantdroit</columns>
+        <primary>1</primary>
+      </key>
+      <column id="271" parent="35" name="idrembsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="272" parent="35" name="idsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="273" parent="35" name="prestation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="274" parent="35" name="date_vente">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="275" parent="35" name="montant_prestation">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="276" parent="35" name="part_ce">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="277" parent="35" name="etat_facture">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="278" parent="35" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="279" parent="35" name="PRIMARY">
+        <columns>idrembsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="280" parent="36" name="idremisebanque">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="281" parent="36" name="date_remise">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="282" parent="36" name="type_remise">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="283" parent="36" name="num_remise">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="284" parent="36" name="montant_remise">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="285" parent="36" name="valid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="286" parent="36" name="PRIMARY">
+        <columns>idremisebanque</columns>
+        <primary>1</primary>
+      </key>
+      <column id="287" parent="37" name="idremisebanquechq">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="288" parent="37" name="idremisebanque">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="289" parent="37" name="idreglementventepresta">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <key id="290" parent="37" name="PRIMARY">
+        <columns>idremisebanquechq</columns>
+        <primary>1</primary>
+      </key>
+      <column id="291" parent="38" name="idremisebanqueesp">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="292" parent="38" name="idremisebanque">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="293" parent="38" name="idreglementventepresta">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <key id="294" parent="38" name="PRIMARY">
+        <columns>idremisebanqueesp</columns>
+        <primary>1</primary>
+      </key>
+      <column id="295" parent="39" name="idsalarie">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="296" parent="39" name="matricule">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="297" parent="39" name="civilite_salarie">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="298" parent="39" name="nom_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="299" parent="39" name="prenom_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="300" parent="39" name="adresse1_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="301" parent="39" name="adresse2_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="302" parent="39" name="cp_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="303" parent="39" name="ville_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="304" parent="39" name="tel_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="305" parent="39" name="port_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="306" parent="39" name="mail_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="307" parent="39" name="date_naissance">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="308" parent="39" name="entre_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="309" parent="39" name="sortie_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="310" parent="39" name="status">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="311" parent="39" name="poste_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="312" parent="39" name="indice_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="313" parent="39" name="commentaire">
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="314" parent="39" name="contrat">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="315" parent="39" name="etat_salarie">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="316" parent="39" name="solde_salarie">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="317" parent="39" name="PRIMARY">
+        <columns>idsalarie</columns>
+        <primary>1</primary>
+      </key>
+      <column id="318" parent="40" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="319" parent="40" name="nom_sauvegarde">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="320" parent="40" name="date_sauvegarde">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="321" parent="40" name="taille_sauvegarde">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="322" parent="40" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="323" parent="41" name="idsoldecaisse">
+        <mandatory>1</mandatory>
+        <data-type>int(13)</data-type>
+      </column>
+      <column id="324" parent="41" name="date_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="325" parent="41" name="num_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="326" parent="41" name="type_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="327" parent="41" name="type_solde">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="328" parent="41" name="libelle_mouvement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="329" parent="41" name="debit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="330" parent="41" name="credit">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="331" parent="41" name="point_caisse">
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <key id="332" parent="41" name="PRIMARY">
+        <columns>idsoldecaisse</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>
