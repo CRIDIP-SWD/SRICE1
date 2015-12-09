@@ -389,7 +389,7 @@
                                                                         <tr>
                                                                             <td class="text-center"><?= $user['iduser']; ?></td>
                                                                             <td class="text-center"><?= $user['login']; ?></td>
-                                                                            <td>
+                                                                            <td class="text-center">
                                                                                 <button type="button" class="btn btn-xs btn-danger" onclick="window.location.href='<?= ROOT,CORE,CONTROL; ?>parametrage.php?action=supp-user&iduser=<?= $user['iduser']; ?>'"><i class="fa fa-remove"></i></button>
                                                                             </td>
                                                                         </tr>
