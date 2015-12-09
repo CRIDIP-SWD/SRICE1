@@ -35,5 +35,5 @@ if(isset($_GET['action']) && $_GET['action'] == 'rest-save-bdd')
 
     $sql_save = mysql_query("SELECT * FROM sauvegarde WHERE id = '$idsauvegarde'")or die(mysql_error());
     $save = mysql_fetch_array($sql_save);
-    $nom_fichier = $save['nom']
+    $nom_fichier = $save['nom_sauvegarde'];
 }
