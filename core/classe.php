@@ -13,6 +13,7 @@ $livret_cls = new fct_livret();
 $pret_cls = new fct_pret();
 
 $params_cls = new parametrage();
+$etab = $params_cls->info_etab();
 
 require dirname(__DIR__)."/vendor/autoload.php";
 

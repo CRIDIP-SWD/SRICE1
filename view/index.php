@@ -433,6 +433,53 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="etablissement" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg bg-info">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h3 class="modal-title"><i class="fa fa-building"></i> Etablissement</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="block">
+                                                            <div class="block-title">
+                                                                <div class="block-options pull-right">
+                                                                    <a title="" data-toggle="modal" class="btn btn-sm btn-info" data-target="#edit-etab"><i class="fa fa-edit"></i></a>
+                                                                </div>
+                                                                <h2>Etablissement</h2>
+                                                            </div>
+
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Nom du comité:</td>
+                                                                            <td><?= html_entity_decode($etab['nom_etablissement']); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Adresse Postal:</td>
+                                                                            <td><?= html_entity_decode($etab['adresse']); ?><br><?= $etab['code_postal']; ?> <?= html_entity_decode($etab['ville']); ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Téléphone:</td>
+                                                                            <td><?= $etab['telephone']; ?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Email:</td>
+                                                                            <td><?= $etab['email']; ?></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         <?php } ?>

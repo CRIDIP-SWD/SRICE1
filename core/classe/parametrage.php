@@ -114,4 +114,11 @@ class parametrage
         return $data;
     }
 
+    public function info_etab()
+    {
+        $sql = mysql_query("SELECT * FROM config_etablissement WHERE idetablissement = '1'")or die(mysql_error());
+        $data = mysql_fetch_array($sql);
+        return $data;
+    }
+
 }
