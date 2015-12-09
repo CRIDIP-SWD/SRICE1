@@ -480,6 +480,57 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="edit-etab" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg bg-info">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h3 class="modal-title"><i class="fa fa-edit"></i> Modification de l'établissement</h3>
+                                            </div>
+                                            <form class="form-horizontal" action="<?= ROOT,CORE,CONTROL; ?>parametrage.php" method="post">
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-text-input">Nom du comité</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-text-input" name="nom_etablissement" class="form-control" value="<?= html_entity_decode($etab['nom_etablissement']); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-text-input">Adresse</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-text-input" name="adresse" class="form-control" value="<?= html_entity_decode($etab['adresse']); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-2 control-label" for="example-text-input">Code Postal</label>
+                                                        <div class="col-md-3">
+                                                            <input type="text" id="example-text-input" name="code_postal" class="form-control" value="<?= $etab['code_postal']; ?>">
+                                                        </div>
+                                                        <label class="col-md-2 control-label" for="example-text-input">Nom du comité</label>
+                                                        <div class="col-md-5">
+                                                            <input type="text" id="example-text-input" name="ville" class="form-control" value="<?= html_entity_decode($etab['ville']); ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-text-input">Téléphone</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-text-input" name="telephone" class="form-control" value="<?= $etab['telephone']; ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label" for="example-text-input">Adresse Mail</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" id="example-text-input" name="email" class="form-control" value="<?= $etab['email']; ?>">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-success" name="action" value="add-user"><i class="fa fa-check"></i> Valider</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         <?php } ?>
